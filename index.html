@@ -14,21 +14,36 @@
   <h1 id="title">Dance Class Form</h1>
   <main>
     <p>Help us bringing more fun classes to the institute</p>
-    <form id="survey-form">
-      <div>
-        <label id="name-label" for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter your name" required>
-      </div>  
+  
+      <form id="survey-form">
+          <div>
+            <label id="name-label" for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+          </div>  
 
-      <div>
-        <label id="email-label" for="email">Email:</label>
-        <input type="text" name="email" id="email" placeholder="Enter your email" required>
-      </div>
+          <div>
+            <label id="email-label" for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+          </div>
 
-      <div>
-          <label for="birthday">Birthday:</label>
-          <input type="date" id="birthday" name="date" required>
-      </div>   
-    </form>
+          <div>
+              <label for="birthday-label">Birthday:</label>
+              <input type="date" id="birthday" name="date" required>
+          </div>
+
+          <div>
+            <label id="number-label" for="number">Classes taken:</label>
+          <input type="number" name="number" id="number" placeholder="Number of classes" min="1" max="30" required>
+          </div>
+
+          <div>
+            <p>What is your level?</p>
+                <select id="dropdown" name="levels">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>  
+           </div>   
+     </form>
   </main>
 </body>
