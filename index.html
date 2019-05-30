@@ -3,64 +3,61 @@
 <head>
     <meta charset="utf-8">
     <title>Heels With Mel | Dance Classes In London</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i|Ubuntu:400,400i,500,500i" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <h1 id="title">Dance Class Form</h1>
-  <main>
-    <p>Help us bringing more fun classes to the institute</p>
-  
-      <form id="survey-form">
-          <div>
-            <label id="name-label" for="name">Name:</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-          </div>  
-
-          <div>
-            <label id="email-label" for="email">Email:</label>
-            <input type="text" name="email" id="email" placeholder="Enter your email" required>
-          </div>
-
-          <div>
-              <label for="birthday-label">Birthday:</label>
-              <input type="date" id="birthday" name="date" required>
-          </div>
-
-          <div>
-            <label id="number-label" for="number">Classes taken:</label>
-          <input type="number" name="number" id="number" placeholder="Number of classes" min="1" max="30" required>
-          </div>
-
-          <div>
-            <p>What is your level?</p>
-                <select id="dropdown" name="levels">
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                </select>  
-          </div>
-          
-          <div>
-            <p>What type of dance classes are you interested in?</p>
-            <label><input type="checkbox" name="dance" checked> Salsa</label><br>
-            <label><input type="checkbox" name="dance"> Tango</label><br>
-            <label><input type="checkbox" name="dance"> Flamenco</label><br>
-            <label><input type="checkbox" name="dance"> Paso doble</label><br>
-            <label><input type="checkbox" name="dance"> Rock</label><br>
-      
-            <input id="adopted" type="radio" name="levels" value="adopted">
-            <label for="adopted">Adopted</label><br>
-            <input id="shopped" type="radio" name="levels" value="shopped">
-            <label for="shopped">Shopped</label><br>
-            <input id="shopped" type="radio" name="levels" value="shopped">
-            <label for="shopped">Shopped</label><br>
-        </div>   
-        
-     </form>
-  </main>
+ <h1 id="title">Dance Class Form</h1>
+ <p id="description">Help us bringing more fun classes to the institute</p>
+ <form id="survey-form">
+     <div>
+       <label id="name-label" for="name" class="details">Name:</label>
+       <input type="text" name="name" id="name" class="field" placeholder="Enter your name" required> 
+     </div>
+     <div>
+        <label id="email-label" for="email" class="details">Email:</label>
+        <input type="text" name="email" id="email" class="field" placeholder="Enter your email" required>
+      </div>
+      <div>
+          <label for="birthday-label" class="details">Birthday:</label>
+          <input type="date" id="birthday" name="date" class="field" required>
+      </div>
+      <div>
+        <label id="number-label" for="number" class="details">Classes taken:</label>
+        <input type="number" name="number" id="number" class="field" placeholder="Number of classes" min="1" max="30" required>
+      </div>
+    
+      <div>
+        <p class="details">What is your level?</p>
+            <select id="dropdown" name="levels" class="fields">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+          </select>  
+       </div>
+       <div>
+          <p>What type of dance classes are you interested in?</p>
+          <label><input type="checkbox" name="dance" value="1" checked> Salsa</label><br>
+          <label><input type="checkbox" name="dance" value="2"> Tango</label><br>
+          <label><input type="checkbox" name="dance" value="3"> Flamenco</label><br>
+          <label><input type="checkbox" name="dance" value="4"> Paso doble</label><br>
+          <label><input type="checkbox" name="dance" value="5"> Rock</label><br>
+       </div>        
+       <div>
+          <p>How likely will you recommend the institute?</p>
+          <input id="likely" type="radio" name="levels" value="likely">
+          <label for="likely">Likely</label><br>
+          <input id="unlikely" type="radio" name="levels" value="unlikely">
+          <label for="unlikely">Unlikely</label><br>
+          <input id="unsure" type="radio" name="levels" value="unsure">
+          <label for="unsure">Unsure</label><br>
+       </div>        
+       <div>
+          <p>Any comments or suggestions?</p>
+          <textarea class="comments" placeholder="Enter your comments or suggestions here..."></textarea>
+       </div>        
+    <button type="submit" id="submit">Submit</button>
+  </form>
 </body>
