@@ -12,52 +12,79 @@
  <h1 id="title">Dance Class Form</h1>
  <p id="description">Help us bringing more fun classes to the institute</p>
  <form id="survey-form">
-     <div>
-       <label id="name-label" for="name" class="details">Name:</label>
-       <input type="text" name="name" id="name" class="field" placeholder="Enter your name" required> 
+     <div class="label">
+       <label id="name-label" for="name">Name:</label>
      </div>
-     <div>
-        <label id="email-label" for="email" class="details">Email:</label>
-        <input type="text" name="email" id="email" class="field" placeholder="Enter your email" required>
+     <div class="field">
+       <input type="text" name="name" id="name" class="input" placeholder="Enter your name" required> 
+     </div>
+    
+     <div class="label">
+        <label id="email-label" for="email">Email:</label>
+     </div>  
+     <div class="field">   
+        <input type="text" name="email" id="email" class="input" placeholder="Enter your email" required>
+     </div>
+    
+      <div class="label">
+          <label for="birthday-label">Birthday:</label>
       </div>
-      <div>
-          <label for="birthday-label" class="details">Birthday:</label>
-          <input type="date" id="birthday" name="date" class="field" required>
-      </div>
-      <div>
-        <label id="number-label" for="number" class="details">Classes taken:</label>
-        <input type="number" name="number" id="number" class="field" placeholder="Number of classes" min="1" max="30" required>
+      <div class="field">  
+          <input type="date" id="birthday" name="date" class="input" required>
       </div>
     
-      <div>
-        <p class="details">What is your level?</p>
-            <select id="dropdown" name="levels" class="fields">
+      <div class="label">
+        <label id="number-label" for="number">Classes taken:</label>
+      </div>  
+      <div class="field">  
+        <input type="number" name="number" id="number" class="input" placeholder="Number of classes" min="1" max="30" required>
+      </div>
+    
+      <div class="label">
+        <p class="label">What is your level?</p>
+      </div>
+      <div class="field">  
+            <select id="dropdown" name="levels">
             <option value="beginner">Beginner</option>
             <option value="intermediate">Intermediate</option>
             <option value="advanced">Advanced</option>
           </select>  
        </div>
-       <div>
+    
+       <div class="label">
           <p>What type of dance classes are you interested in?</p>
+       </div>
+       <div class="field">
           <label><input type="checkbox" name="dance" value="1" checked> Salsa</label><br>
           <label><input type="checkbox" name="dance" value="2"> Tango</label><br>
           <label><input type="checkbox" name="dance" value="3"> Flamenco</label><br>
           <label><input type="checkbox" name="dance" value="4"> Paso doble</label><br>
           <label><input type="checkbox" name="dance" value="5"> Rock</label><br>
-       </div>        
-       <div>
-          <p>How likely will you recommend the institute?</p>
-          <input id="likely" type="radio" name="levels" value="likely">
-          <label for="likely">Likely</label><br>
-          <input id="unlikely" type="radio" name="levels" value="unlikely">
-          <label for="unlikely">Unlikely</label><br>
-          <input id="unsure" type="radio" name="levels" value="unsure">
-          <label for="unsure">Unsure</label><br>
-       </div>        
-       <div>
-          <p>Any comments or suggestions?</p>
+       </div>  
+      
+       <div class="rating">
+          <div class="label">
+            <p>How likely will you recommend the institute?</p>
+          </div>  
+          <div class="field">  
+              <input id="likely" type="radio" name="levels" value="likely">
+              <label for="likely">Likely</label><br>
+              <input id="unlikely" type="radio" name="levels" value="unlikely">
+              <label for="unlikely">Unlikely</label><br>
+              <input id="unsure" type="radio" name="levels" value="unsure">
+              <label for="unsure">Unsure</label><br>
+          </div>
+       </div> 
+    
+       <div class="label">
+          <p class="label">Any comments or suggestions?</p>   
+       </div>
+       <div class="field">   
           <textarea class="comments" placeholder="Enter your comments or suggestions here..."></textarea>
-       </div>        
-    <button type="submit" id="submit">Submit</button>
+       </div>
+       
+       <div class="button">
+        <button type="submit" id="submit">Submit</button>
+       </div>  
   </form>
 </body>
